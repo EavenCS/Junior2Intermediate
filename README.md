@@ -9,6 +9,7 @@ This repository is designed to help developers grow from Junior to Intermediate 
 | Snake             | A classic game where the player controls a snake to eat food and grow longer. The goal is to avoid colliding with the snake's own body or the walls. | CLI Game   |
 | Stock Price Tracker | A simple CLI tool that allows the user to enter a stock ticker symbol and retrieve the current stock price along with the day's percentage change. | CLI Tool   |
 | Bubblesort | A simple CLI tool demonstrating the Bubble Sort algorithm by sorting an array of integers and measuring its runtime for educational purposes. | CLI Tool   |
+| Greatest Common Divisor |This program calculates the Greatest Common Divisor (GCD) of two numbers using the Euclidean Algorithm. The user inputs two positive integers, and the tool returns the GCD as the result. | CLI Tool   |
 
 ## Purpose of the Repository
 
