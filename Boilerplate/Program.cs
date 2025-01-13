@@ -1,10 +1,2 @@
-﻿using System;
-using System.Diagnostics;
-
-namespace SelectionSort.CLI
-{
-    internal class Program
-    {
-        //Todo
-    }
-}
+﻿// See https://aka.ms/new-console-template for more information
+Console.WriteLine("Hello, World!");
