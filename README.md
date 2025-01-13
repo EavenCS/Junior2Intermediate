@@ -10,6 +10,8 @@ This repository is designed to help developers grow from Junior to Intermediate 
 | Stock Price Tracker | A simple CLI tool that allows the user to enter a stock ticker symbol and retrieve the current stock price along with the day's percentage change. | CLI Tool   |
 | Bubblesort | A simple CLI tool demonstrating the Bubble Sort algorithm by sorting an array of integers and measuring its runtime for educational purposes. | CLI Tool   |
 | Greatest Common Divisor |This program calculates the Greatest Common Divisor (GCD) of two numbers using the Euclidean Algorithm. The user inputs two positive integers, and the tool returns the GCD as the result. | CLI Tool   |
+|Selection Sort |Selection Sort is a simple sorting algorithm that repeatedly selects the smallest element from the unsorted portion of an array and swaps it with the first unsorted element, gradually building a sorted portion at the beginning of the array.| CLI Tool   |
+
 
 ## Purpose of the Repository
 
