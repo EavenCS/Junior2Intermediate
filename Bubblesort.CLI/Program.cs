@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Diagnostics;
+using Boilerplate.Boilerplates;
 
 namespace Bubblesort.CLI
 {
@@ -11,22 +11,21 @@ namespace Bubblesort.CLI
         /// <param name="args">Command-line arguments</param>
         static void Main(string[] args)
         {
-
             int[] unsortedArray = new int[] { 1, 3, 2, 5, 6, 4, 7, 9, 10 };
 
             Console.WriteLine("Unsorted Array:");
-            PrintArray(unsortedArray);
+            SortHelper.PrintArray(unsortedArray);
 
-            Stopwatch stopwatch = Stopwatch.StartNew();
-
-            BubbleSort(unsortedArray);
-            stopwatch.Stop();
-
+            // Measure the time taken for Bubble Sort
+            double timeTaken = SortHelper.MeasureExecutionTime(() =>
+            {
+                BubbleSort(unsortedArray);
+            });
 
             Console.WriteLine("Sorted Array:");
-            PrintArray(unsortedArray);
+            SortHelper.PrintArray(unsortedArray);
 
-            Console.WriteLine($"Time taken for Bubble Sort: {stopwatch.Elapsed.TotalMilliseconds} ms");
+            Console.WriteLine($"Time taken for Bubble Sort: {timeTaken} ms");
         }
 
         /// <summary>
@@ -48,15 +47,6 @@ namespace Bubblesort.CLI
                     }
                 }
             }
-        }
-
-        /// <summary>
-        /// Prints the elements of an integer array to the console in a comma-separated format.
-        /// </summary>
-        /// <param name="array">The array to be printed</param>
-        static void PrintArray(int[] array)
-        {
-            Console.WriteLine(string.Join(", ", array));
         }
     }
 }
